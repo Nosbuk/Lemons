@@ -1,0 +1,65 @@
+.bookmark {
+  position: fixed;
+  right: 0;
+  top: 50px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+}
+
+.bookmark-link {
+  display: block;
+  padding: 30px 30px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  transform: translateX(100%);
+  transition: transform 0.5s ease-out;
+}
+
+.bookmark-link:nth-of-type(2) {
+  border-top: solid #fff 2px;
+  border-bottom: solid #fff 2px;
+}
+
+.bookmark-link:last-of-type {
+  border-bottom: solid #fff 2px;
+}
+
+.bookmark-check {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+}
+
+.bookmark-icon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(../assets/img/right-arrow.png);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 4;
+  transform: rotate(180deg);
+  transition: transform 0.3s linear;
+}
+
+.bookmark-check:checked ~ .bookmark-link {
+  transform: translateX(0);
+}
+
+.bookmark-check:checked ~ .bookmark-icon {
+  transform: rotate(0deg);
+}

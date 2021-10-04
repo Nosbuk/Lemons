@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;400;600&family=Pacifico&display=swap");
+
+* {
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+p {
+  color: #fff;
+  font-weight: 200;
+}
+
+.bold {
+  font-weight: 600;
+  color: gold;
+}

@@ -1,0 +1,10 @@
+body::after {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
